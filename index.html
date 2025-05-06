@@ -7,20 +7,26 @@
   <script src="https://raw.githack.com/AR-js-org/AR.js/3.4.5/aframe/build/aframe-ar.js"></script>
 </head>
 
-<body style="margin : 0px; overflow: hidden;">
+<body style="margin: 0px; overflow: hidden;">
 
   <a-scene 
     embedded 
-    arjs="sourceType: webcam; trackingMethod: best; detectionMode: color_and_matrix; changeMatrixMode: modelViewMatrix;" 
+    arjs="sourceType: webcam; trackingMethod: best; detectionMode: color_and_matrix; changeMatrixMode: modelViewMatrix;"
     vr-mode-ui="enabled: false" 
     renderer="sortObjects: true; antialias: true; logarithmicDepthBuffer: true;">
 
     <a-assets>
-      <img id="what" src="./images/rearranged_irregular.png">
+      <img id="what" src="./images/001.png">
     </a-assets> 
 
-    <a-marker preset="kanji" size="0.08">
-      <a-image src="#what" width="7" height="10" rotation="-90 0 0" position="0 0.5 0"></a-image>
+    <a-marker preset="001" size="0.08">
+      <a-image 
+        src="#what" 
+        width="1" 
+        height="1.5" 
+        rotation="0 0 0" 
+        position="0 0.5 0">
+      </a-image>
     </a-marker>
 
     <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
